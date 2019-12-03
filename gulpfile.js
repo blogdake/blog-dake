@@ -10,13 +10,17 @@ gulp.task('browser-sync', () => {
       baseDir: "./"
     }
   });
-  gulp.watch("./*.css").on('change', browserSync.reload);
-  gulp.watch("./*.html").on('change', browserSync.reload);
+  gulp.watch("./*.*").on('change', browserSync.reload);
+  
+  gulp.watch("./css/*.css", minifyCSS);
+
 });
 
 gulp.task('minify-css', () => {
-  return gulp.src('css/*.css')
-    .pipe(minifyCSS('style.css'))
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("css/"));
+  gulp.src(['./css/*.css', '!./css/*.min.css'])
+    .pipe(minifyCSS())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest("./css"));
 });
