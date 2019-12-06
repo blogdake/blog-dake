@@ -13,6 +13,7 @@ function bs() {
     }
   });
   watch("./sass/**/*.sass", serveSass);
+  watch("./sass/**/*.scss", serveSass);
   watch("./*.*").on('change', browserSync.reload);
   // watch("./css/*.css", minifyCSS);
   watch("./js/*.js").on('change', browserSync.reload);;
@@ -20,7 +21,7 @@ function bs() {
 };
 
 function serveSass() {
-  return src('./sass/**/*.sass',)
+  return src('./sass/**/*.sass', './sass/**/*.scss')
     .pipe(sass())
     .pipe(dest('./css'))
     .pipe(browserSync.stream());
