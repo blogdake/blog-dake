@@ -390,7 +390,7 @@ body {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 1.5rem;
+  margin-right: 2.5rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -499,7 +499,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .nav__item {
-    margin-right: 2rem; } }
+    margin-right: 1,5rem; } }
 
 @media screen and (max-width: 1200px) {
   html {
