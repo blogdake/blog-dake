@@ -527,10 +527,9 @@ body {
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 22.86rem; }
+    max-width: none; }
   .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    max-width: 26.6rem; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
@@ -569,7 +568,8 @@ body {
     font-family: 'Futura Book', sans-serif;
     font-size: 1.5rem;
     line-height: 135.84%;
-    margin: 1rem 0 4.7rem 0; }
+    margin: 1rem 0 4.7rem 0;
+    max-width: 20.6rem; }
   .hero__button {
     position: relative;
     margin-bottom: 2.15rem;
