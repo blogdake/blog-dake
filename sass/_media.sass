@@ -48,6 +48,7 @@
     max-width: 375px
     margin: auto
   .header
+    position: absolute
     padding: 19.6px 0
     .logo
       font-size: 1rem
@@ -65,15 +66,19 @@
   .hero
     &__content
       margin-top: 38.3px
+      margin: 0
     &__text
-      min-width: 316px
+      position: relative
       font-family: 'Futura Book', sans-serif
       font-size: 1.5rem
       line-height: 135.84%
       margin: 1rem 0 4.7rem 0
     &__button
+      position: relative
       margin-bottom: 2.15rem
-      width: 340px
       height: 51px
       margin-top: -1.8rem
       margin-bottom: 4rem
+      min-width: 100%
+    
+  
