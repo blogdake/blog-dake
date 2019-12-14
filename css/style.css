@@ -613,10 +613,10 @@ img {
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
-    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    background: #131313 url("../img/bg-lines.png") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
     color: #fff;
-    z-index: 3999999; }
+    z-index: 399; }
   .modal__close {
     position: absolute;
     right: 0;

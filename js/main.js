@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
+  const modalEsc = document.querySelectorAll('modal_visible');
   const closeBtn = document.querySelector('.modal__close');
   const switchModal = () =>{
     modal.classList.toggle('modal_visible');
@@ -16,17 +17,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   document.addEventListener('keyup', (e) => {
    
-    // if (e.keyCode === 27){
-    //   modal.classList.toggle('modal_visible');
-    // } else{
-    //   console.log('no esc')
-    // }
       if(e.key === "Escape") {
-        modal.classList.toggle('modal_visible');
+        
+        modal.classList.remove('modal_visible');
+        
       }
   });
-  document.addEventListener(function keyPress (e) {
-    
-  });
+  
     
 });
