@@ -11,4 +11,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   closeBtn.addEventListener('click', switchModal);
+
+  // modal.addEventListener('click', switchModal);
+
+  document.addEventListener('keyup', (e) => {
+   
+    // if (e.keyCode === 27){
+    //   modal.classList.toggle('modal_visible');
+    // } else{
+    //   console.log('no esc')
+    // }
+      if(e.key === "Escape") {
+        modal.classList.toggle('modal_visible');
+      }
+  });
+  document.addEventListener(function keyPress (e) {
+    
+  });
+    
 });

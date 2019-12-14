@@ -596,7 +596,7 @@ img {
   opacity: 0;
   visibility: hidden;
   position: fixed;
-  z-index: 199;
+  z-index: 100;
   left: 0;
   top: 0;
   bottom: 0;
@@ -615,7 +615,8 @@ img {
     max-width: 36.36rem;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
-    color: #fff; }
+    color: #fff;
+    z-index: 3999999; }
   .modal__close {
     position: absolute;
     right: 0;
