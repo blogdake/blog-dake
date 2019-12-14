@@ -13,7 +13,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   closeBtn.addEventListener('click', switchModal);
 
-  // modal.addEventListener('click', switchModal);
+  // modal.onclick = function(event) {
+  //   event.target.style.backgroundColor = 'yellow';
+  
+  //   event.target.tagName;
+  
+  //   event.target.style.backgroundColor = '';
+  // };
+
+  modal.onclick = function(event) {
+  
+    event.target.classList.remove('modal_visible');
+  
+  };
 
   document.addEventListener('keyup', (e) => {
    
