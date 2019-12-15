@@ -18,13 +18,13 @@ $(document).ready(function () {
       modal.removeClass('modal_visible' );
     }
   });
-
+  $('.go-up').css('display', 'none');
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 150) {
+    if ($(this).scrollTop() > 100) {
         if ($('.go-up').is(':hidden')) {
             $('.go-up').css({opacity : 1}).fadeIn('slow');
         }
-    } else { $('.go-up').stop(true, false).fadeOut('50000'); }
+    } else { $('.go-up').stop(true, false).fadeOut('fast'); }
   });
   $('.go-up').click(function() {
     $('html, body').stop().animate({scrollTop : 0}, 300);
