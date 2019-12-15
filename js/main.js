@@ -18,7 +18,6 @@ $(document).ready(function () {
       modal.removeClass('modal_visible' );
     }
   });
-  $('.go-up').css('display', 'none');
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
         if ($('.go-up').is(':hidden')) {
