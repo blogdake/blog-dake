@@ -19,12 +19,12 @@ $(document).ready(function () {
     }
   });
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 150) {
+    if ($(this).scrollTop() > 160) {
       $('.go-up').addClass('go-up_visible').fadeIn('6000');
-    } else { $('.go-up').stop(true, false).fadeOut('5000'); }
+    } else { $('.go-up').stop(true, false).fadeOut('4000'); }
   });
   $('.go-up').click(function() {
-    $('html, body').stop().animate({scrollTop : 0}, 600);
+    $('html, body').stop().animate({scrollTop : 0}, 650);
 });
 
 });
