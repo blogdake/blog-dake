@@ -18,6 +18,7 @@ $(document).ready(function () {
       modal.removeClass('modal_visible' );
     }
   });
+
   $(window).scroll(function() {
     if ($(this).scrollTop() > 160) {
       $('.go-up').addClass('go-up_visible').fadeIn('6000');
@@ -25,6 +26,24 @@ $(document).ready(function () {
   });
   $('.go-up').click(function() {
     $('html, body').stop().animate({scrollTop : 0}, 650);
-});
+  });
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+  next.css('left', prev.width() + 15 + bullets.width() + 15);
+  bullets.css('left', prev.width() + 15);
 
 });
