@@ -16,10 +16,16 @@
       display: none
     &__content
       margin-left: 0
-@media screen and ( max-width: 760px )
+@media screen and ( max-width: 850px )
+  .row
+    &__flex
+      flex-direction: column
+      align-items: center
   .swiper
     &-slide
-      padding-bottom: 10px
+      &::after
+        content: ''
+        padding-bottom: 110px
       &r
         &-image
           margin-top: 0
@@ -31,8 +37,6 @@
       &__value
         font-size: 1.27rem
         letter-spacing: -0.04rem
-      &__active
-        padding-bottom: 50px
   .mobile-order-top
     order: -1
   .col-50
@@ -63,9 +67,11 @@
         margin-top: 0.45rem
         letter-spacing: -0.08rem
         margin-bottom: 3.2rem
+@media screen and ( max-width: 760px )
   .row
-    flex-direction: column
-    align-items: center
+    &__block
+      flex-direction: column
+      align-items: center
   .types
     &__card
       margin-bottom: 5rem
