@@ -803,6 +803,89 @@ img {
   .hero__content {
     margin-left: 0; } }
 
+@media screen and (max-width: 760px) {
+  .swiper-slide {
+    padding-bottom: 10px; }
+    .swiper-slider-image {
+      margin-top: 0; }
+    .swiper-slide__text {
+      flex-basis: 46.9%;
+      letter-spacing: -0.08rem; }
+    .swiper-slide__heading {
+      margin-bottom: 0.8rem; }
+    .swiper-slide__value {
+      font-size: 1.27rem;
+      letter-spacing: -0.04rem; }
+    .swiper-slide__active {
+      padding-bottom: 50px; }
+  .mobile-order-top {
+    order: -1; }
+  .col-50 {
+    width: 100%; }
+  .section {
+    padding: 50px 0; }
+    .section-title__heading {
+      margin-top: -6px;
+      font-size: 1.83rem;
+      line-height: 2.5rem;
+      text-align: center;
+      letter-spacing: -0.07em; }
+    .section-title__word {
+      letter-spacing: -0.11em;
+      display: block; }
+      .section-title__word::after {
+        display: none;
+        margin: 0; }
+    .section-title_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .section-title__text {
+      text-align: center;
+      line-height: 1.9rem;
+      max-width: 24.27rem;
+      margin-top: 0.45rem;
+      letter-spacing: -0.08rem;
+      margin-bottom: 3.2rem; }
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card__text {
+    margin-left: 0;
+    max-width: 25.1rem;
+    margin-top: -13.4rem;
+    padding: 1.91rem 3.04rem;
+    margin-bottom: 6.6rem; }
+  .card__image_photo {
+    background: url("../img/types/type-2.1.jpg");
+    z-index: 99; }
+  .card__list {
+    line-height: 2.16rem; }
+  .card__pricetag_one {
+    bottom: -1.09rem;
+    font-size: 1.39rem;
+    padding: 1.114rem 3.1rem; }
+  .card__pricetag_two {
+    bottom: -1.49rem;
+    font-size: 1.39rem;
+    padding: 1.014rem 4.4rem; }
+  .design {
+    background-color: #131313; }
+    .design__section-title {
+      color: #fff; }
+  .section-title__heading {
+    font-size: 2rem;
+    line-height: 2.5rem; }
+  .section-title__description {
+    margin-top: 1.64rem;
+    font-size: 1.39rem;
+    line-height: 1.4;
+    max-width: 28rem;
+    font-style: normal;
+    font-weight: normal; } }
+
 @media screen and (max-width: 570px) {
   .contacts__phone {
     margin-right: 0;
@@ -878,88 +961,3 @@ img {
 @media screen and (max-width: 330px) {
   .hero__text {
     max-width: 20.6rem; } }
-
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
-  .card__text {
-    margin-left: 0;
-    max-width: 25.1rem;
-    margin-top: -13.4rem;
-    padding: 1.91rem 3.04rem;
-    margin-bottom: 6.6rem; }
-  .card__image_photo {
-    background: url("../img/types/type-2.1.jpg");
-    z-index: 99; }
-  .card__list {
-    line-height: 2.16rem; }
-  .card__pricetag_one {
-    bottom: -1.09rem;
-    font-size: 1.39rem;
-    padding: 1.114rem 3.1rem; }
-  .card__pricetag_two {
-    bottom: -1.49rem;
-    font-size: 1.39rem;
-    padding: 1.014rem 4.4rem; }
-  .design {
-    background-color: #131313; }
-    .design__section-title {
-      color: #fff; }
-  .section-title__heading {
-    font-size: 2rem;
-    line-height: 2.5rem; }
-  .section-title__description {
-    margin-top: 1.64rem;
-    font-size: 1.39rem;
-    line-height: 1.4;
-    max-width: 28rem;
-    font-style: normal;
-    font-weight: normal; }
-  img {
-    max-height: 100%; }
-  .swiper-slide {
-    padding-bottom: 0;
-    max-height: 17rem;
-    margin-bottom: 0.6rem; }
-    .swiper-slider-image {
-      margin-top: 0; }
-    .swiper-slide__text {
-      flex-basis: 46.9%;
-      letter-spacing: -0.08rem; }
-    .swiper-slide__heading {
-      margin-bottom: 0.8rem; }
-    .swiper-slide__value {
-      font-size: 1.27rem;
-      letter-spacing: -0.04rem; }
-  .mobile-order-top {
-    order: -1; }
-  .col-50 {
-    width: 100%; }
-  .section {
-    padding: 0; }
-    .section-title__heading {
-      margin-top: -6px;
-      font-size: 1.83rem;
-      line-height: 2.5rem;
-      text-align: center;
-      letter-spacing: -0.07em; }
-    .section-title__word {
-      letter-spacing: -0.11em;
-      padding-left: 119px; }
-      .section-title__word::after {
-        opacity: 0;
-        visibility: hidden; }
-    .section-title_left {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-    .section-title__text {
-      text-align: center;
-      line-height: 1.9rem;
-      max-width: 24.27rem;
-      margin-top: 0.45rem;
-      letter-spacing: -0.08rem;
-      margin-bottom: 3.2rem; } }
