@@ -520,7 +520,7 @@ img {
     font-weight: 100; }
   .hero__button {
     margin-right: 20px;
-    width: 207px;
+    min-width: 207px;
     height: 51px; }
   .hero__instagram {
     position: absolute;
