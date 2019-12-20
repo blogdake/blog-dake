@@ -804,7 +804,7 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 880px) {
-  .row__flex {
+  .row {
     flex-direction: column;
     align-items: center; }
   .swiper-slide::after {
@@ -848,14 +848,11 @@ img {
       max-width: 24.27rem;
       margin-top: 0.45rem;
       letter-spacing: -0.08rem;
-      margin-bottom: 3.2rem; } }
+      margin-bottom: 3.2rem; }
+  .types__card {
+    margin-bottom: 5rem; } }
 
 @media screen and (max-width: 760px) {
-  .row__block {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
   .card__text {
     margin-left: 0;
     max-width: 25.1rem;
@@ -917,7 +914,7 @@ img {
     min-width: 22.86rem;
     margin-bottom: 1.85rem; } }
 
-@media screen and (max-height: 520px) {
+@media screen and (max-height: 605px) {
   .hero__scroll-down {
     display: none; } }
 
