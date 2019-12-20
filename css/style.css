@@ -6,7 +6,7 @@
   font-display: wrap; }
 
 @font-face {
-  font-family: 'Futura Dimi';
+  font-family: 'Futura Dami';
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -906,7 +906,12 @@ img {
   .hero__content {
     max-width: none; }
   .hero__text {
-    max-width: 26.6rem; }
+    position: relative;
+    font-family: 'Futura Book', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    margin: 1rem 0 2.9rem 0;
+    max-width: 26.4rem; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
@@ -940,13 +945,6 @@ img {
   .hero__content {
     margin-top: 38.3px;
     margin: 0; }
-  .hero__text {
-    position: relative;
-    font-family: 'Futura Book', sans-serif;
-    font-size: 1.5rem;
-    line-height: 2.1rem;
-    margin: 1rem 0 2.9rem 0;
-    max-width: 26.4rem; }
   .hero__button {
     position: relative;
     margin-bottom: 2.15rem;
