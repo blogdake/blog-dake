@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -15,14 +17,14 @@
   <header class="header">
     <div class="container">
       <div class="menu">
-        <div class="logo menu__logo">Repair Design Project</div>
+        <div class="logo menu__logo wow wow fadeInLeft">Repair Design Project</div>
         <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Главная</a>
-          <a href="#" class="nav__item">Проекты</a>
-          <a href="#" class="nav__item">Замер</a>
-          <a href="#" class="nav__item">Команда</a>
-          <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.4s">Главная</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.5s">Проекты</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.6s">Замер</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.7s">Команда</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.8s">Отзывы</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.9s">Контакты</a>
         </nav>
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
@@ -35,7 +37,7 @@
   </header>
   <main>
     <section class="hero">
-      <div class="instagram hero__instagram">
+      <div class="instagram hero__instagram ">
         <a href="#" class="instagram__link">Instagram</a>
       </div>
       <div class="container">
@@ -50,13 +52,13 @@
         <!-- /.hero__content -->
       </div>
       <!-- /.container -->
-      <a href="#" class="hero__scroll-down">Листайте вниз</a>
+      <a href="#" class="hero__scroll-down wow bounce" data-wow-delay="5.0s">Листайте вниз</a>
     </section>
     <!-- /.hero -->
     <section class="section section_dark projects">
       <div class="container">
         <div class="section-title section-title_left">
-          <h2 class="section-title__heading section-title__heading_primary">Завершенные <span
+          <h2 class="section-title__heading section-title__heading_primary wow zoomIn">Завершенные <span
               class="section-title__word">проекты</span></h2>
           <!-- /.section-title__heading -->
           <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей
@@ -177,9 +179,9 @@
     <section class="section control">
       <div class="container">
         <div class="section-title control__section-title section-title_light">
-          <h2 class="section-title__heading">Онлайн контроль</h2>
+          <h2 class="section-title__heading wow zoomIn">Онлайн контроль</h2>
           <!-- /.section-title__heading -->
-          <div class="section-title__image">
+          <div class="section-title__image wow fadeInUp" data-wow-delay="0.4s">
             <img src="./img/video.svg" alt="video">
           </div>
           <!-- /.section-title__image -->
@@ -217,9 +219,9 @@
     <section class="section types">
       <div class="container">
         <div class="section-title types__section-title">
-          <h2 class="section-title__heading">Виды ремонта</h2>
+          <h2 class="section-title__heading wow zoomIn">Виды ремонта</h2>
           <!-- /.section-title__heading -->
-          <div class="section-title__image">
+          <div class="section-title__image  wow fadeInUp" data-wow-delay="0.4s">
             <img src="./img/repair.svg" alt="Repair">
           </div>
           <!-- /.section-title__image -->
@@ -330,9 +332,9 @@
     <section class="section design">
       <div class="container">
         <div class="section-title design__section-title">
-          <h2 class="section-title__heading">Дизайн проект</h2>
+          <h2 class="section-title__heading wow zoomIn">Дизайн проект</h2>
           <!-- /.section-title__heading -->
-          <div class="section-title__image">
+          <div class="section-title__image  wow fadeInUp" data-wow-delay="0.4s">
             <img src="./img/design.svg" alt="desing">
           </div>
           <!-- /.section-title__image -->
@@ -483,6 +485,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

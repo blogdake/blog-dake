@@ -24,6 +24,7 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
     "browser-sync": "^2.26.7"
   }
 }
