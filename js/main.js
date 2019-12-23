@@ -47,4 +47,39 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 15);
 
   new WOW().init();
+
+  //Валидация формы
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName:{
+        required: true,
+        minlength: 2
+      },
+      userPhone: "required",
+      // правило-обект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // собшения
+    messages: {
+      userName:{
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: "Имя обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      }
+    }
+    
+  });
+  
+  // маски
+
+  $('[type=tel]').mask('+7(000)00-00-000', {placeholder: "+7(___)__-__-___"})
+
 });
