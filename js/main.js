@@ -49,6 +49,66 @@ $(document).ready(function () {
   new WOW().init();
 
   //Валидация формы
+  $(".footer__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName:{
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // правило-обект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // собшения
+    messages: {
+      userName:{
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: "Имя обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      }
+    }
+    
+  });
+  $(".control__form").validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName:{
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // правило-обект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // собшения
+    messages: {
+      userName:{
+        required: "Имя обязательно",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв"
+      },
+      userPhone: "Имя обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      }
+    }
+    
+  });
   $(".modal__form").validate({
     errorClass: "invalid",
     rules: {
@@ -68,7 +128,8 @@ $(document).ready(function () {
     messages: {
       userName:{
         required: "Имя обязательно",
-        minlength: "Имя не короче двух букв"
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Имя обязателен",
       userEmail: {
