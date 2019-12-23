@@ -55,7 +55,8 @@ $(document).ready(function () {
       // строчное правило
       userName:{
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxlength: 15
       },
       userPhone: "required",
       // правило-обект

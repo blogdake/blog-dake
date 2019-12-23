@@ -41,6 +41,9 @@
     width: 100%
   .section
     padding: 50px 0
+    &_light-dark
+      background-color: $dark
+      color: $light
     &-title
       &__heading
         margin-top: -6px
@@ -68,6 +71,28 @@
   .types
     &__card
       margin-bottom: 5rem
+  .control
+    &__section
+      &-title
+        margin-top: 0
+    &__text
+      margin-bottom: -2.9rem
+    &__policy
+      margin-top: 0.43rem
+      margin-bottom: 5rem
+    &__button
+      order: 1
+      padding: 1.4857rem 4.7857rem
+      margin-bottom: -6rem
+    &__label
+      margin-bottom: 2px
+    &__form
+      flex-direction: column
+    &__input-group
+      margin-top: 5.3rem
+  .input
+    &_color
+      color: $light
 @media screen and ( max-width: 760px )
   .card
     &__text
@@ -182,6 +207,13 @@
   .button
     &-swiper
       margin-bottom: 3rem
+  .control
+    &__text
+      font-size: 1.16rem
+      line-height: 2rem
+      letter-spacing: 0px
+    &__policy-label 
+      justify-content: start
 @media screen and ( max-width: 330px )
   .hero
     &__text
