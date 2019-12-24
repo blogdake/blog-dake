@@ -46,9 +46,6 @@
     &_dark 
       background-color: $black
     &-title
-      &__description, &__heading
-        color: $light
-    &-title
       &__heading
         margin-top: -6px
         margin-bottom: 1.1rem
@@ -115,7 +112,10 @@
       flex-basis: 100%
     &__button 
       flex-basis: 100%
-
+  .teams
+    &__section
+      &-title
+        color: $light
 @media screen and ( max-width: 760px )
   .card
     &__text
@@ -185,7 +185,6 @@
   .footer
     &__menu
       display: none
-
 @media screen and ( max-height: 605px )
   .hero
     &__scroll-down

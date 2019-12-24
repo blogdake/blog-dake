@@ -741,7 +741,8 @@ img {
   margin-bottom: -7px; }
 
 .control__button {
-  padding: 1.2857rem 4.7857rem; }
+  padding: 1.2857rem 4.7857rem;
+  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15); }
 
 .control__policy {
   flex-basis: 100%;
@@ -792,7 +793,8 @@ img {
   color: #fff; }
   .card__pricetag_one {
     bottom: -2.19rem;
-    padding: 1.214rem 2.6rem; }
+    padding: 1.214rem 2.6rem;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
 .design {
   background-color: #fff; }
@@ -803,6 +805,7 @@ img {
     margin-bottom: 5.7rem; }
 
 .card__pricetag_two {
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
   bottom: -1.89rem;
   padding: 1.214rem 5.5rem 1.214rem 2.4rem; }
 
@@ -810,7 +813,8 @@ img {
   margin-bottom: 2rem; }
 
 .teams__card {
-  width: 19.428rem; }
+  width: 19.428rem;
+  margin: auto; }
 
 .teams__block {
   position: relative;
@@ -881,15 +885,23 @@ img {
     border-radius: 30px; }
 
 .teams__icon {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background-color: #E3B873;
-  margin-bottom: -2.5rem;
-  margin-left: -2.5rem; }
+  max-width: 5rem;
+  max-height: 5rem; }
+  .teams__icon-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: #E3B873;
+    margin-bottom: -2.5rem;
+    margin-left: -2.5rem;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
+
+.teams_photo {
+  max-width: 19.428rem;
+  max-height: 25.5rem; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
@@ -1057,8 +1069,6 @@ img {
       background-color: #181818; }
     .section_dark {
       background-color: #181818; }
-    .section-title__description, .section-title__heading {
-      color: #fff; }
     .section-title__heading {
       margin-top: -6px;
       margin-bottom: 1.1rem;
@@ -1120,7 +1130,9 @@ img {
     .footer__input-group {
       flex-basis: 100%; }
     .footer__button {
-      flex-basis: 100%; } }
+      flex-basis: 100%; }
+  .teams__section-title {
+    color: #fff; } }
 
 @media screen and (max-width: 760px) {
   .card__text {
