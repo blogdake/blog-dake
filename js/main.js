@@ -50,7 +50,7 @@ $(document).ready(function () {
 
   //Валидация формы
   $(".footer__form").validate({
-    errorElement: "em",
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -76,7 +76,7 @@ $(document).ready(function () {
     
   });
   $(".control__form").validate({
-    errorElement: "em",
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -100,7 +100,7 @@ $(document).ready(function () {
     
   });
   $(".modal__form").validate({
-    errorElement: "em",
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       // строчное правило

@@ -375,7 +375,7 @@ template {
   .policy__label_center {
     justify-content: center; }
 
-em.invalid {
+div.invalid {
   position: absolute;
   bottom: -1rem;
   color: tomato; }
