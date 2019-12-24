@@ -375,7 +375,9 @@ template {
   .policy__label_center {
     justify-content: center; }
 
-label.invalid {
+em.invalid {
+  position: absolute;
+  bottom: -1rem;
   color: tomato; }
 
 input.invalid {
@@ -389,7 +391,7 @@ input.invalid {
 .row {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .col-30 {
   flex-basis: 30%; }
@@ -732,6 +734,7 @@ img {
 .control__input-group {
   display: flex;
   flex-direction: column;
+  position: relative;
   flex-basis: 30%; }
 
 .control__label {
@@ -803,6 +806,91 @@ img {
   bottom: -1.89rem;
   padding: 1.214rem 5.5rem 1.214rem 2.4rem; }
 
+.teams__section-title {
+  margin-bottom: 2rem; }
+
+.teams__card {
+  width: 19.428rem; }
+
+.teams__block {
+  position: relative;
+  max-width: 16.642rem;
+  margin: 0 auto;
+  margin-top: -5.8rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.teams__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem;
+  padding-top: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-align: center; }
+
+.teams__description {
+  margin-top: 0rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.285rem;
+  line-height: 1.857rem;
+  color: #959595; }
+
+.teams__experience {
+  display: flex;
+  justify-content: center;
+  max-width: 16.642rem;
+  height: 44px;
+  background-color: #E3B873;
+  bottom: -2.89rem; }
+
+.teams__pricetag {
+  position: absolute;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 0.928rem;
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase; }
+  .teams__pricetag_three {
+    flex-basis: 100%; }
+
+.teams__text {
+  max-width: 40.785rem;
+  letter-spacing: -0.4px;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4.285rem;
+  text-align: center;
+  font-size: 1.528rem;
+  line-height: 2.43rem;
+  padding-bottom: 13rem; }
+  .teams__text::before {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    font-style: normal;
+    font-weight: normal;
+    width: 55px;
+    height: 2px;
+    background-color: #E3B873;
+    border-radius: 30px; }
+
+.teams__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #E3B873;
+  margin-bottom: -2.5rem;
+  margin-left: -2.5rem; }
+
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem; }
@@ -833,6 +921,7 @@ img {
     .footer__input-group {
       display: flex;
       flex-direction: column;
+      position: relative;
       flex-basis: 45%;
       margin-bottom: 3.2rem; }
       .footer__input-group_full-width {
@@ -895,6 +984,7 @@ img {
   .modal__input-group {
     display: flex;
     flex-direction: column;
+    position: relative;
     margin-bottom: 3.482rem; }
   .modal__input:last-of-type {
     margin-bottom: 1rem; }
@@ -964,10 +1054,14 @@ img {
   .section {
     padding: 50px 0; }
     .section_light-dark {
-      background-color: #131313;
+      background-color: #181818; }
+    .section_dark {
+      background-color: #181818; }
+    .section-title__description, .section-title__heading {
       color: #fff; }
     .section-title__heading {
       margin-top: -6px;
+      margin-bottom: 1.1rem;
       font-size: 1.83rem;
       line-height: 2.5rem;
       text-align: center;
@@ -991,25 +1085,42 @@ img {
       margin-bottom: 3.2rem; }
   .types__card {
     margin-bottom: 5rem; }
-  .control__section-title {
-    margin-top: 0; }
-  .control__text {
-    margin-bottom: -2.9rem; }
-  .control__policy {
-    margin-top: 0.43rem;
-    margin-bottom: 5rem; }
-  .control__button {
-    order: 1;
-    padding: 1.4857rem 4.7857rem;
-    margin-bottom: -6rem; }
-  .control__label {
-    margin-bottom: 2px; }
-  .control__form {
-    flex-direction: column; }
-  .control__input-group {
-    margin-top: 5.3rem; }
+  .control {
+    color: #fff; }
+    .control__section-title {
+      margin-top: 0; }
+    .control__text {
+      margin-bottom: -2.9rem; }
+    .control__policy {
+      margin-top: 0.43rem;
+      margin-bottom: 5rem; }
+    .control__button {
+      order: 1;
+      padding: 1.4857rem 4.7857rem;
+      margin-bottom: -6rem; }
+    .control__label {
+      margin-bottom: 2px; }
+    .control__form {
+      flex-direction: column; }
+    .control__input-group {
+      margin-top: 5.3rem; }
   .input_color {
-    color: #fff; } }
+    color: #fff; }
+  .teams__card {
+    margin-bottom: 4.5rem; }
+  .teams__text {
+    display: none; }
+  .footer {
+    padding-top: 0;
+    background-color: #181818;
+    background-image: none; }
+    .footer__wrap {
+      margin: 0 auto;
+      padding: 2.5rem 0; }
+    .footer__input-group {
+      flex-basis: 100%; }
+    .footer__button {
+      flex-basis: 100%; } }
 
 @media screen and (max-width: 760px) {
   .card__text {
@@ -1031,16 +1142,14 @@ img {
     bottom: -1.49rem;
     font-size: 1.39rem;
     padding: 1.014rem 4.4rem; }
-  .design {
-    background-color: #131313; }
-    .design__section-title {
-      color: #fff; }
+  .design__section-title {
+    color: #fff; }
   .section-title__heading {
     font-size: 2rem;
     line-height: 2.5rem; }
   .section-title__description {
     margin-top: 1.64rem;
-    font-size: 1.39rem;
+    font-size: 1.29rem;
     line-height: 1.4;
     max-width: 28rem;
     font-style: normal;
@@ -1071,7 +1180,9 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .footer__menu {
+    display: none; } }
 
 @media screen and (max-height: 605px) {
   .hero__scroll-down {

@@ -50,6 +50,7 @@ $(document).ready(function () {
 
   //Валидация формы
   $(".footer__form").validate({
+    errorElement: "em",
     errorClass: "invalid",
     rules: {
       // строчное правило
@@ -62,7 +63,6 @@ $(document).ready(function () {
       // правило-обект
       userEmail: {
         required: true,
-        email: true
       }
     }, // собшения
     messages: {
@@ -72,67 +72,58 @@ $(document).ready(function () {
         maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Имя обязателен",
-      userEmail: {
-        required: "Обязательно укажите email",
-        email: "Введите в формате: name@domain.com"
-      }
     }
     
   });
   $(".control__form").validate({
+    errorElement: "em",
     errorClass: "invalid",
     rules: {
       // строчное правило
-      userName:{
+      controlUserName:{
         required: true,
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      controlUserPhone: "required",
       // правило-обект
-      userEmail: {
-        required: true,
-        email: true
-      }
     }, // собшения
     messages: {
-      userName:{
+      controlUserName:{
         required: "Имя обязательно",
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не больше 15 букв"
       },
-      userPhone: "Имя обязателен",
-      userEmail: {
-        required: "Обязательно укажите email",
-        email: "Введите в формате: name@domain.com"
+      controlUserPhone: "Имя обязателен",
+      
       }
-    }
     
   });
   $(".modal__form").validate({
+    errorElement: "em",
     errorClass: "invalid",
     rules: {
       // строчное правило
-      userName:{
+      modalUserName:{
         required: true,
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      modalUserPhone: "required",
       // правило-обект
-      userEmail: {
+      modalUserEmail: {
         required: true,
         email: true
       }
     }, // собшения
     messages: {
-      userName:{
+      modalUserName:{
         required: "Имя обязательно",
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не больше 15 букв"
       },
-      userPhone: "Имя обязателен",
-      userEmail: {
+      modalUserPhone: "Имя обязателен",
+      modalUserEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате: name@domain.com"
       }
@@ -142,6 +133,6 @@ $(document).ready(function () {
   
   // маски
 
-  $('[type=tel]').mask('+7(000)00-00-000', {placeholder: "+7(___)__-__-___"})
+  $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "+7(___)___-__-__"})
 
 });
