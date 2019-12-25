@@ -110,12 +110,33 @@
       padding: 2.5rem 0
     &__input-group 
       flex-basis: 100%
+      margin-top: 2.2rem
+      &_full-width
+        margin-bottom: 0.6rem
     &__button 
       flex-basis: 100%
+      padding: 1.585rem 4.785rem
+    &__text
+      display: flex
+      flex-direction: column
+    &__map
+      height: 21.014rem
+      order: -4
+      margin-bottom: 1rem
+      margin-top: 1.7rem
+      max-width: 56.67rem
+    &__policy
+      margin-bottom: 5.6rem
   .teams
     &__section
       &-title
         color: $light
+  .design
+    &__section-title
+      color: $light
+  .policy
+    &__label_center 
+      justify-content: start
 @media screen and ( max-width: 760px )
   .card
     &__text
@@ -154,6 +175,9 @@
         max-width: 28rem
         font-style: normal
         font-weight: normal
+  .footer
+    &__map
+      max-width: 39.87rem
 @media screen and ( max-width: 570px )
   .contacts
     &__phone
@@ -238,6 +262,9 @@
       letter-spacing: 0px
     &__policy-label 
       justify-content: start
+  .footer
+    &__map
+      max-width: 28.57rem
 
 @media screen and ( max-width: 330px )
   .hero

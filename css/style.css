@@ -948,6 +948,32 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 4.643rem;
+    max-width: 66.07rem;
+    height: 33.214rem; }
+  .footer [class*="ymaps-2"][class*="-ground-pane"] {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); }
+  .footer__text {
+    display: block; }
+  .footer__description {
+    display: block;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873; }
+  .footer__icon {
+    margin-top: 1.857rem;
+    margin-bottom: 3.09rem;
+    text-align: center; }
+  .footer__message-icon {
+    margin-right: 1.07rem; }
 
 .modal {
   opacity: 0;
@@ -1128,11 +1154,30 @@ img {
       margin: 0 auto;
       padding: 2.5rem 0; }
     .footer__input-group {
-      flex-basis: 100%; }
+      flex-basis: 100%;
+      margin-top: 2.2rem; }
+      .footer__input-group_full-width {
+        margin-bottom: 0.6rem; }
     .footer__button {
-      flex-basis: 100%; }
+      flex-basis: 100%;
+      padding: 1.585rem 4.785rem; }
+    .footer__text {
+      display: flex;
+      flex-direction: column; }
+    .footer__map {
+      height: 21.014rem;
+      order: -4;
+      margin-bottom: 1rem;
+      margin-top: 1.7rem;
+      max-width: 56.67rem; }
+    .footer__policy {
+      margin-bottom: 5.6rem; }
   .teams__section-title {
-    color: #fff; } }
+    color: #fff; }
+  .design__section-title {
+    color: #fff; }
+  .policy__label_center {
+    justify-content: start; } }
 
 @media screen and (max-width: 760px) {
   .card__text {
@@ -1165,7 +1210,9 @@ img {
     line-height: 1.4;
     max-width: 28rem;
     font-style: normal;
-    font-weight: normal; } }
+    font-weight: normal; }
+  .footer__map {
+    max-width: 39.87rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1243,7 +1290,9 @@ img {
     line-height: 2rem;
     letter-spacing: 0px; }
   .control__policy-label {
-    justify-content: start; } }
+    justify-content: start; }
+  .footer__map {
+    max-width: 28.57rem; } }
 
 @media screen and (max-width: 330px) {
   .hero__text {
