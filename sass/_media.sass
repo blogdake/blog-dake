@@ -9,6 +9,8 @@
     &__item
       margin-right: 1rem
 @media screen and ( max-width: 992px )
+  .button
+    font-size: 1.25rem
   .nav
     display: none
   .hero
@@ -120,13 +122,19 @@
       display: flex
       flex-direction: column
     &__map
+      margin: unset
       height: 21.014rem
       order: -4
       margin-bottom: 1rem
       margin-top: 1.7rem
-      max-width: 56.67rem
     &__policy
       margin-bottom: 5.6rem
+    &__section-title
+      margin-top: 2.2rem
+    &__message-icon, &__instagram-icon
+      &::after
+        width: 39px
+        height: 39px
   .teams
     &__section
       &-title
@@ -137,6 +145,7 @@
   .policy
     &__label_center 
       justify-content: start
+      font-size: 1.333rem
 @media screen and ( max-width: 760px )
   .card
     &__text
@@ -175,9 +184,6 @@
         max-width: 28rem
         font-style: normal
         font-weight: normal
-  .footer
-    &__map
-      max-width: 39.87rem
 @media screen and ( max-width: 570px )
   .contacts
     &__phone
@@ -209,10 +215,10 @@
   .footer
     &__menu
       display: none
-    &__description
+    &__section-title
       max-width: 26.2rem
-    &__map
-      max-width: 28.57rem
+      font-size: 1.5rem
+      line-height: 2.083rem
 @media screen and ( max-height: 605px )
   .hero
     &__scroll-down

@@ -614,12 +614,13 @@ img {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
   font-size: 2.857rem;
   line-height: 1.35;
   font-weight: 100; }
   .title_primary {
-    color: #E3B873;
-    text-transform: uppercase; }
+    color: #E3B873; }
 
 .projects {
   padding-bottom: 30rem; }
@@ -914,14 +915,9 @@ img {
     margin-bottom: 3.714rem;
     padding: 2.5rem; }
   .footer__title {
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.428rem;
     text-align: center;
-    margin-bottom: 3.214rem;
-    margin-top: 0; }
+    margin-bottom: 3.214rem; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -949,31 +945,36 @@ img {
     background-color: #131313;
     padding: 4.285rem 0; }
   .footer__map {
-    position: relative;
     margin: 0 auto;
     margin-bottom: 4.643rem;
     max-width: 66.07rem;
-    height: 33.214rem; }
-  .footer [class*="ymaps-2"][class*="-ground-pane"] {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); }
+    height: 33.214rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
   .footer__text {
     display: block; }
-  .footer__description {
+  .footer__section-title {
     display: block;
-    font-family: 'Yeseva One', cursive;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.428rem;
     line-height: 2rem;
     max-width: 36.4rem;
     margin: auto;
     text-align: center;
-    text-transform: uppercase;
-    color: #E3B873; }
+    margin-bottom: 1.857rem; }
   .footer__icon {
-    margin-top: 1.857rem;
-    margin-bottom: 3.09rem;
-    text-align: center; }
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.09rem; }
+  .footer__message-icon::after, .footer__instagram-icon::after {
+    content: '';
+    display: block;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%; }
+  .footer__message-icon::after {
+    background: #E3B873 url("../img/message-icon.svg") no-repeat center; }
+  .footer__instagram-icon::after {
+    background: #E3B873 url("../img/instagram-icon.svg") no-repeat center; }
   .footer__message-icon {
     margin-right: 1.07rem; }
 
@@ -1065,6 +1066,8 @@ img {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
+  .button {
+    font-size: 1.25rem; }
   .nav {
     display: none; }
   .hero__instagram {
@@ -1167,19 +1170,25 @@ img {
       display: flex;
       flex-direction: column; }
     .footer__map {
+      margin: unset;
       height: 21.014rem;
       order: -4;
       margin-bottom: 1rem;
-      margin-top: 1.7rem;
-      max-width: 56.67rem; }
+      margin-top: 1.7rem; }
     .footer__policy {
       margin-bottom: 5.6rem; }
+    .footer__section-title {
+      margin-top: 2.2rem; }
+    .footer__message-icon::after, .footer__instagram-icon::after {
+      width: 39px;
+      height: 39px; }
   .teams__section-title {
     color: #fff; }
   .design__section-title {
     color: #fff; }
   .policy__label_center {
-    justify-content: start; } }
+    justify-content: start;
+    font-size: 1.333rem; } }
 
 @media screen and (max-width: 760px) {
   .card__text {
@@ -1212,9 +1221,7 @@ img {
     line-height: 1.4;
     max-width: 28rem;
     font-style: normal;
-    font-weight: normal; }
-  .footer__map {
-    max-width: 39.87rem; } }
+    font-weight: normal; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1244,10 +1251,10 @@ img {
     margin-bottom: 1.85rem; }
   .footer__menu {
     display: none; }
-  .footer__description {
-    max-width: 26.2rem; }
-  .footer__map {
-    max-width: 28.57rem; } }
+  .footer__section-title {
+    max-width: 26.2rem;
+    font-size: 1.5rem;
+    line-height: 2.083rem; } }
 
 @media screen and (max-height: 605px) {
   .hero__scroll-down {

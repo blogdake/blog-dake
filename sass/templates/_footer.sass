@@ -9,14 +9,9 @@
     margin-bottom: 3.714rem
     padding: 2.5rem
   &__title
-    text-transform: uppercase
-    font-family: 'Yeseva One', cursive
-    font-style: normal
-    font-weight: normal
     font-size: 1.428rem
     text-align: center
     margin-bottom: 3.214rem
-    margin-top: 0
   &__form
     display: flex
     flex-wrap: wrap
@@ -44,32 +39,39 @@
     background-color: $dark
     padding: 4.285rem 0
   &__map
-    position: relative
     margin: 0 auto
     margin-bottom: 4.643rem
     max-width: 66.07rem
     height: 33.214rem
-  [class*="ymaps-2"][class*="-ground-pane"]
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
-    -webkit-filter:grayscale(100%)
+    -webkit-filter: grayscale(100%) // Safari 6.0 - 9.0 
+    filter: grayscale(100%)
   &__text
     display: block
-  &__description
+  &__section-title
     display: block
-    font-family: 'Yeseva One', cursive
-    font-style: normal
-    font-weight: normal
     font-size: 1.428rem
     line-height: 2rem
     max-width: 36.4rem
     margin: auto
     text-align: center
-    text-transform: uppercase
-    color: $primary
+    margin-bottom: 1.857rem
   &__icon
-    margin-top: 1.857rem
+    display: flex
+    justify-content: center
     margin-bottom: 3.09rem
-    text-align: center
+  &__message-icon, &__instagram-icon
+    &::after
+      content: ''
+      display: block
+      width: 29px
+      height: 29px
+      border-radius: 50%
+  &__message-icon
+    &::after
+      background: $primary url('../img/message-icon.svg') no-repeat center
+  &__instagram-icon
+    &::after
+      background: $primary url('../img/instagram-icon.svg') no-repeat center
   &__message-icon
     margin-right: 1.07rem
 
