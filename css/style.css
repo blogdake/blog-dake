@@ -965,6 +965,8 @@ img {
     font-weight: normal;
     font-size: 1.428rem;
     line-height: 2rem;
+    max-width: 36.4rem;
+    margin: auto;
     text-align: center;
     text-transform: uppercase;
     color: #E3B873; }
@@ -1242,6 +1244,8 @@ img {
     margin-bottom: 1.85rem; }
   .footer__menu {
     display: none; }
+  .footer__description {
+    max-width: 26.2rem; }
   .footer__map {
     max-width: 28.57rem; } }
 
