@@ -975,7 +975,7 @@ img {
     background: #E3B873 url("../img/instagram-icon.svg") no-repeat center; }
   .footer__message-icon {
     margin-right: 1.07rem; }
-  .footer_phone {
+  .footer__phone {
     text-decoration: none; }
 
 .modal {
