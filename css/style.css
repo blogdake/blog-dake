@@ -1241,7 +1241,9 @@ img {
     min-width: 22.86rem;
     margin-bottom: 1.85rem; }
   .footer__menu {
-    display: none; } }
+    display: none; }
+  .footer__map {
+    max-width: 28.57rem; } }
 
 @media screen and (max-height: 605px) {
   .hero__scroll-down {
@@ -1290,9 +1292,7 @@ img {
     line-height: 2rem;
     letter-spacing: 0px; }
   .control__policy-label {
-    justify-content: start; }
-  .footer__map {
-    max-width: 28.57rem; } }
+    justify-content: start; } }
 
 @media screen and (max-width: 330px) {
   .hero__text {
