@@ -802,8 +802,6 @@ img {
   .design__section-title {
     color: #131313;
     margin-bottom: 2.78rem; }
-  .design__card {
-    margin-bottom: 5.7rem; }
 
 .card__pricetag_two {
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
@@ -1173,7 +1171,7 @@ img {
       margin: unset;
       height: 21.014rem;
       order: -4;
-      margin-bottom: 1rem;
+      margin-bottom: 3.48rem;
       margin-top: 1.7rem; }
     .footer__policy {
       margin-bottom: 5.6rem; }
@@ -1303,7 +1301,9 @@ img {
     line-height: 2rem;
     letter-spacing: 0px; }
   .control__policy-label {
-    justify-content: start; } }
+    justify-content: start; }
+  .footer__icon {
+    margin-top: 1.97rem; } }
 
 @media screen and (max-width: 330px) {
   .hero__text {
