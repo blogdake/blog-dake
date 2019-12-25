@@ -975,6 +975,8 @@ img {
     background: #E3B873 url("../img/instagram-icon.svg") no-repeat center; }
   .footer__message-icon {
     margin-right: 1.07rem; }
+  .footer_phone {
+    text-decoration: none; }
 
 .modal {
   opacity: 0;
@@ -1303,7 +1305,12 @@ img {
   .control__policy-label {
     justify-content: start; }
   .footer__icon {
-    margin-top: 1.97rem; } }
+    margin-top: 1.97rem; }
+  .footer__section-title {
+    margin: auto;
+    max-width: 26.2rem;
+    font-size: 1.5rem;
+    line-height: 2.083rem; } }
 
 @media screen and (max-width: 330px) {
   .hero__text {
