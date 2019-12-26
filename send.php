@@ -1,8 +1,8 @@
 <?php
 
-$userName = $_POST['modalUserName'];
-$userEmail = $_POST['modalUserPhone'];
-$userPhone = $_POST['modalUserEmail'];
+$userName = $_POST['userName'];
+$userEmail = $_POST['userPhone'];
+$userPhone = $_POST['userEmail'];
 
 // Load Composer's autoloader
 require 'phpmailer/PHPMailer.php';
