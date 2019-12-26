@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="menu">
+        <div class="logo menu__logo wow wow fadeInLeft">Repair Design Project</div>
+        <nav class="nav menu__nav">
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.4s">Главная</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.5s">Проекты</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.6s">Замер</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.7s">Команда</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.8s">Отзывы</a>
+          <a href="#" class="nav__item wow fadeInLeftBig" data-wow-delay="0.9s">Контакты</a>
+        </nav>
+        <div class="contacts menu__contacts">
+          <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+          <button class="button contacts__button button_primary" data-toggle="modal">Заказать звонок</button>
+        </div>
+      </div>
+      <!-- /.menu -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <main>
+    <section class="hero">
+      <div class="instagram hero__instagram ">
+        <a href="#" class="instagram__link">Instagram</a>
+      </div>
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="title hero__title">Спасибо за заявку
+          </h1>
+          <p class="hero__text">Наш менеджер перезвонит вам в течение 15 минут</p>
+        </div>
+        <!-- /.hero__content -->
+      </div>
+      <!-- /.container -->
+      <a href="#" class="hero__scroll-down wow bounce" data-wow-delay="5.0s">Листайте вниз</a>
+    </section>
+    <!-- /.hero -->
+  </main>
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button> <!-- /.modal__close -->
+      <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group">
+          <label for="modal-user-name" class="label form__label label_light">Имя </label>
+          <input type="text" name="userName" class="input form__input modal__input input_light" id="modal-user-name" placeholder="Как вас зовут:">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="modal-user-phone" class="label form__label label_light">Телефон</label>
+          <input type="tel" name="userPhone" class="input form__input modal__input input_light" id="modal-user-phone" placeholder="Ваш номер телефона:">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="modal-user-email" class="label form__label label_light">Email</label>
+          <input type="email" name="userEmail" class="input form__input modal__input input_light" id="modal-user-email" placeholder="Ваш email">
+        </div>
+        
+        <div class="policy modal__policy">
+          <input type="checkbox" name="policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
+          <label for="modal-policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+        </div>
+        <!-- /.policy -->
+        <button class="button button_primary modal__button">Отправить заявку</button>
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="go-up">
+    <img src="./img/upload.svg" alt="стрелка" class="go-up__icon">
+  </div>
+  <!-- /.go-up -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

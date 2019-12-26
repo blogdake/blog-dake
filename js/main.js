@@ -49,7 +49,7 @@ $(document).ready(function () {
   new WOW().init();
 
   //Валидация формы
-  $(".footer__form").validate({
+  $(".form").validate({
     errorElement: "div",
     errorClass: "invalid",
     rules: {
@@ -63,6 +63,7 @@ $(document).ready(function () {
       // правило-обект
       userEmail: {
         required: true,
+        email: true
       }
     }, // собшения
     messages: {
@@ -72,58 +73,7 @@ $(document).ready(function () {
         maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Имя обязателен",
-    }
-    
-  });
-  $(".control__form").validate({
-    errorElement: "div",
-    errorClass: "invalid",
-    rules: {
-      // строчное правило
-      controlUserName:{
-        required: true,
-        minlength: 2,
-        maxlength: 15
-      },
-      controlUserPhone: "required",
-      // правило-обект
-    }, // собшения
-    messages: {
-      controlUserName:{
-        required: "Имя обязательно",
-        minlength: "Имя не короче 2 букв",
-        maxlength: "Имя не больше 15 букв"
-      },
-      controlUserPhone: "Имя обязателен",
-      
-      }
-    
-  });
-  $(".modal__form").validate({
-    errorElement: "div",
-    errorClass: "invalid",
-    rules: {
-      // строчное правило
-      modalUserName:{
-        required: true,
-        minlength: 2,
-        maxlength: 15
-      },
-      modalUserPhone: "required",
-      // правило-обект
-      modalUserEmail: {
-        required: true,
-        email: true
-      }
-    }, // собшения
-    messages: {
-      modalUserName:{
-        required: "Имя обязательно",
-        minlength: "Имя не короче 2 букв",
-        maxlength: "Имя не больше 15 букв"
-      },
-      modalUserPhone: "Имя обязателен",
-      modalUserEmail: {
+      userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате: name@domain.com"
       }
