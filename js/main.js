@@ -60,11 +60,6 @@ $(document).ready(function () {
         maxlength: 15
       },
       userPhone: "required",
-      // правило-обект
-      userEmail: {
-        required: true,
-        email: true
-      }
     }, // собшения
     messages: {
       userName:{
@@ -72,11 +67,7 @@ $(document).ready(function () {
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не больше 15 букв"
       },
-      userPhone: "Имя обязателен",
-      userEmail: {
-        required: "Обязательно укажите email",
-        email: "Введите в формате: name@domain.com"
-      }
+      userPhone: "Телефон обязателен",
     }
     
   });
@@ -93,12 +84,12 @@ $(document).ready(function () {
       controlUserPhone: "required",
     }, // собшения
     messages: {
-      userName:{
+      controlUserName:{
         required: "Имя обязательно",
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не больше 15 букв"
       },
-      userPhone: "Имя обязателен",
+      controlUserPhone: "Телефон обязателен",
     }
     
   });
@@ -125,7 +116,7 @@ $(document).ready(function () {
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не больше 15 букв"
       },
-      modalUserPhone: "Имя обязателен",
+      modalUserPhone: "Телефон обязателен",
       modalUserEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате: name@domain.com"

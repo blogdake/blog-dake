@@ -19,7 +19,7 @@
   &__dialog
     position: relative
     max-width: 36.36rem
-    background: $dark url('../img/bg-lines.png') no-repeat center
+    background: $dark url('../img/bg-lines.png') no-repeat center / cover
     padding: 2.357rem 3.5rem 1.928rem
     color: $light
     z-index: 399
@@ -35,7 +35,8 @@
     cursor: pointer
   &__title
     font-family: 'Yeseva One', cursive
-    font-family: 1.357rem
+    font-weight: normal
+    font-size: 1.357rem
     text-align: center
     margin: 0
     margin-bottom: 2.428rem
@@ -48,11 +49,8 @@
       flex-direction: column
       position: relative
       margin-bottom: 3.482rem
-    &:last-of-type
-      margin-bottom: 1rem
   &__policy
     margin-bottom: 2.7rem
+    margin-top: -2rem
   &__button
     align-self: flex-end
-  
-        
