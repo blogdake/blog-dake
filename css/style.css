@@ -343,9 +343,10 @@ template {
     color: rgba(255, 255, 255, 0.5); }
 
 .input {
+  font-family: "Futura Dami", serif;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
@@ -371,7 +372,8 @@ template {
     border: 1px solid #E3B873;
     border-radius: 1px;
     cursor: pointer;
-    margin-right: 0.64rem; }
+    margin-right: 0.64rem;
+    margin-left: 0.2rem; }
   .policy__label_center {
     justify-content: center; }
 
@@ -732,12 +734,14 @@ img {
   max-width: 55rem;
   margin: auto; }
 
-.control__input-group {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  flex-basis: 30%;
-  margin-bottom: 3.2rem; }
+.control__input {
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
+  .control__input-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-basis: 30%;
+    margin-bottom: 3.2rem; }
 
 .control__button {
   padding: 1.2857rem 4.7857rem;
@@ -1022,10 +1026,11 @@ img {
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
+    line-height: 26.33px;
     font-size: 1.357rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 2.028rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
@@ -1033,12 +1038,13 @@ img {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 3.482rem; }
+    margin-bottom: 3.382rem; }
   .modal__policy {
-    margin-bottom: 2.7rem;
-    margin-top: -2rem; }
+    margin-bottom: 1.2rem;
+    margin-top: -1rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 16.7px 50.5px; }
 
 .go-up {
   opacity: 0;
