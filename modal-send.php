@@ -25,13 +25,13 @@ try {
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('k.dauke548@gmail.com', 'Даулет');
+    $mail->setFrom('k.dauke548@gmail.com', 'Даулет modal');
     $mail->addAddress('dauke_dake_98@mail.ru');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Новая заявка с сайта';
-    $mail->Body    = "Имя пользователя: ${mUserName}, его(eё) телефон: ${mUserPhone}. Его(Её) почта: ${mUserEmail}" ;
+    $mail->Body    = "Имя пользователя: ${mUserName}, его(eё) телефон: ${mUserPhone}. Его(Её) почта: ${mUserEmail}";
 
     $mail->send();
     header('Location: thanks.html');

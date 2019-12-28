@@ -90,11 +90,16 @@
       padding: 1.4857rem 4.7857rem
       margin-bottom: -6rem
     &__label
+      color: rgba(255, 255, 255, 0.5)
       margin-bottom: 2px
     &__form
       flex-direction: column
-    &__input-group
-      margin-top: 5.3rem
+    &__input
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+      &::-webkit-input-placeholder
+        color: $light
+      &-group
+        margin-top: 5.3rem
   .input
     &_color
       color: $light

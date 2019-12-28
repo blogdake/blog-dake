@@ -1152,11 +1152,16 @@ img {
       padding: 1.4857rem 4.7857rem;
       margin-bottom: -6rem; }
     .control__label {
+      color: rgba(255, 255, 255, 0.5);
       margin-bottom: 2px; }
     .control__form {
       flex-direction: column; }
-    .control__input-group {
-      margin-top: 5.3rem; }
+    .control__input {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+      .control__input::-webkit-input-placeholder {
+        color: #fff; }
+      .control__input-group {
+        margin-top: 5.3rem; }
   .input_color {
     color: #fff; }
   .teams__card {
