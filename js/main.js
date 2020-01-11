@@ -1,7 +1,9 @@
 $(document).ready(function () {
   var modal = $('.modal'),
+      popup = $('.popup'),
       modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close');
+      closeBtn = $('.modal__close'),
+      closeBtn2 = $('.popup__close');
 
   modalBtn.on('click', function () {
     modal.toggleClass('modal_visible');
@@ -11,11 +13,23 @@ $(document).ready(function () {
   });
   $(this).keydown(function(eventObject){
     if (eventObject.which == 27)
-      modal.removeClass('modal_visible');
+    modal.removeClass('modal_visible');
   });
   $( ".modal" ).on('click', function( event ) {
     if (event.target == modal[0]){
       modal.removeClass('modal_visible' );
+    }
+  });
+  closeBtn2.on('click', function () {
+    popup.removeClass('popup_visible');
+  });
+  $(this).keydown(function(eventObject){
+    if (eventObject.which == 27)
+    popup.removeClass('popup_visible');
+  });
+  $( ".modal" ).on('click', function( event ) {
+    if (event.target == popup[0]){
+      popup.removeClass('popup_visible' );
     }
   });
 
@@ -68,8 +82,18 @@ $(document).ready(function () {
         maxlength: "Имя не больше 15 букв"
       },
       userPhone: "Телефон обязателен",
-    }
-    
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "footer-send.php",
+        data: $('.footer__form').serialize(),
+        success: function (response) {
+          $(".footer__form")[0].reset(),
+          popup.toggleClass('popup_visible');
+        }
+      });
+    },
   });
   $(".control__form").validate({
     errorElement: "div",
@@ -90,8 +114,18 @@ $(document).ready(function () {
         maxlength: "Имя не больше 15 букв"
       },
       controlUserPhone: "Телефон обязателен",
-    }
-    
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "control-send.php",
+        data: $('.control__form').serialize(),
+        success: function (response) {
+          $(".control__form")[0].reset(),
+          popup.toggleClass('popup_visible');
+        }
+      });
+    },
   });
   $(".modal__form").validate({
     errorElement: "div",
@@ -121,13 +155,40 @@ $(document).ready(function () {
         required: "Обязательно укажите email",
         email: "Введите в формате: name@domain.com"
       }
-    }
+    },
     
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "modal-send.php",
+        data: $('.modal__form').serialize(),
+        success: function (response) {
+          $(".modal__form")[0].reset(),
+          modal.removeClass('modal_visible'),
+          popup.toggleClass('popup_visible');
+        }
+      });
+    },
   });
   
   // маски
-
+  
   $('[type=tel]').mask('+7(000)000-00-00', {placeholder: "Ваш номер телефона:"})
+  
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '465',
+      width: '100%',
+      videoId: 'RHzzLqJWqHs',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  })
 
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
 
 });

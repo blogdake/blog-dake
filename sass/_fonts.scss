@@ -5,7 +5,7 @@
   url('../fonts/futura/FuturaBookC.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
   }
 @font-face {
   font-family: 'Futura Dami';
@@ -14,5 +14,14 @@
   url('../fonts/futura/FuturaDemiC.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  font-display: wrap;
+  font-display: swap;
   }
+@font-face {
+    font-family: 'Yeseva One';
+    src: 
+    url('../fonts/YesevaOne/YesevaOne-Regular.woff2') format('woff2'),
+    url('../fonts/YesevaOne/YesevaOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

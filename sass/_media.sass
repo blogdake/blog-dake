@@ -8,7 +8,16 @@
   .nav
     &__item
       margin-right: 1rem
+  .hero__content
+    max-width: 46.85rem
 @media screen and ( max-width: 992px )
+  .card
+    &__text
+      margin-left: 0
+      max-width: 25.1rem
+      margin-top: -13.4rem
+      padding: 1.91rem 3.04rem
+      margin-bottom: 6.6rem
   .button
     font-size: 1.25rem
   .nav
@@ -81,7 +90,7 @@
       &-title
         margin-top: 0
     &__text
-      margin-bottom: -2.9rem
+      margin-bottom: -0.9rem
     &__policy
       margin-top: 0.43rem
       margin-bottom: 5rem
@@ -90,16 +99,16 @@
       padding: 1.4857rem 4.7857rem
       margin-bottom: -6rem
     &__label
-      color: rgba(255, 255, 255, 0.5)
+      color: rgba($light, 0.5)
       margin-bottom: 2px
     &__form
       flex-direction: column
     &__input
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+      border-bottom: 1px solid rgba($light, 0.7)
       &::-webkit-input-placeholder
         color: $light
       &-group
-        margin-top: 5.3rem
+        margin-top: 2.8rem
   .input
     &_color
       color: $light
@@ -115,9 +124,11 @@
     &__wrap
       margin: 0 auto
       padding: 2.5rem 0
-    &__input-group 
-      flex-basis: 100%
-      margin-top: 2.2rem
+    &__input
+      border-bottom: 1px solid rgba($light, 0.7)
+      &-group 
+        flex-basis: 100%
+        margin-top: 2.2rem
       &_full-width
         margin-bottom: 0.6rem
     &__button 
@@ -153,12 +164,6 @@
       font-size: 1.333rem
 @media screen and ( max-width: 760px )
   .card
-    &__text
-      margin-left: 0
-      max-width: 25.1rem
-      margin-top: -13.4rem
-      padding: 1.91rem 3.04rem
-      margin-bottom: 6.6rem
     &__image
       &_photo
         background: url('../img/types/type-2.1.jpg')
@@ -217,6 +222,12 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+  .control
+    &__video
+      min-height: 24rem
+      margin-bottom: 2.228rem
+    &__text::before 
+      margin-bottom: 1.28rem
   .footer
     &__menu
       display: none
@@ -277,6 +288,12 @@
       letter-spacing: 0px
     &__policy-label 
       justify-content: start
+    &__video
+      min-height: 17.3rem
+  .video
+    &__play
+      width: 5.083rem
+      height: 5.083rem
   .footer
     &__icon
       margin-top: 1.97rem

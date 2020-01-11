@@ -30,7 +30,13 @@
   color: $light
   padding: 0.5rem 0
   &_light
-    &::placeholder
+    &::-moz-placeholder
+      color: $light
+    &::-webkit-input-placeholder
+      color: $light
+    &:-moz-placeholder
+      color: $light
+    &:-ms-input-placeholder
       color: $light
   &_color
     color: $dark
